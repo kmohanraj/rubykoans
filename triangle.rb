@@ -14,7 +14,22 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  hypoteneus, side1, side2 =
+    if c > a || c > b
+      [c,a,b]
+    elsif b > a || b > c
+      [b,a,c]
+    else
+      [a,b,c]
+    end
+
   case
+  # Throw error if any sides are equal to or less than 0
+  when a <= 0 || b <= 0 || c <= 0
+    raise TriangleError
+  # Throw error if sides don't add up
+  when side1 + side2 <= hypoteneus
+    raise TriangleError
   when a == b && a == c
   	return :equilateral
   when a == b || a == c || c == b
