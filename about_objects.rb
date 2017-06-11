@@ -21,6 +21,10 @@ class AboutObjects < Neo::Koan
 
   def test_every_object_has_an_id
     obj = Object.new
+    # Object#object_id -> integer
+    #   Returns an integer identifier for obj.
+    #   The same number will be returned on all calls to object_id
+    #   for a given object, and no two active objects will share an id.
     assert_equal Fixnum, obj.object_id.class
   end
 
@@ -41,6 +45,10 @@ class AboutObjects < Neo::Koan
   end
 
   def test_clone_creates_a_different_object
+    # Object#clone -> an_object
+    #   Produces a shallow copy of obj, the instance variables of obj are
+    #   copied, but not the objects they reference.  clone copies the frozen
+    #   and tainted state of obj.
     obj = Object.new
     copy = obj.clone
 
