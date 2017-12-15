@@ -13,7 +13,6 @@ I am a computer programmer and web developer from Scarborough, Ontario.  My inte
 > Visit my [LinkedIn][linkedinlink] profile.
 
 
-<!-- Web Links -->
 [blogLink]: <https://medium.com/coding-and-web-development>
 [linkedinlink]: <https://ca.linkedin.com/in/danielpaulpereira>
 [projectBlogLink]: <https://medium.com/spring-2017-project-app-burrito-builder>
