@@ -18,3 +18,5 @@ I am a computer programmer and web developer from Scarborough, Ontario.  My inte
 [projectBlogLink]: <https://medium.com/spring-2017-project-app-burrito-builder>
 [twitterLink]: <https://twitter.com/pereirawebdev>
 [rubyKoans]: <http://rubykoans.com/>
+
+_*Daniel Pereira*_
